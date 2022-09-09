@@ -1,0 +1,17 @@
+image:
+  file: Dockerfile
+
+checkoutLocation: "shopware"
+
+ports:
+  - port: 8000
+    onOpen: open-preview
+  - port: 3306
+    onOpen: ignore
+
+tasks:
+  - init: |
+      docker-compose pull
+  - name: Start Dockware
+    command: >
+        docker run --rm -p 80:80 dockware/play:latest;
