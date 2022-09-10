@@ -8,4 +8,4 @@ ports:
 tasks:
   - init:  docker-compose pull
   - name: Start Dockware
-    command: docker run --rm -p 8000:80 dockware/play:latest;
+    command: docker-compose up -d
