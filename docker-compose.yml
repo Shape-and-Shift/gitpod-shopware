@@ -7,7 +7,7 @@ services:
     ports:
       - "22:22"     # ssh
       - "8000:80"     # apache2
-      - "443:443"   # apache2 https
+      - "4433:443"   # apache2 https
       - "8888:8888" # watch admin
       - "9998:9998" # watch storefront proxy
       - "9999:9999" # watch storefront
