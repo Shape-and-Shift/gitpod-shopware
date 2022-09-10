@@ -9,4 +9,4 @@ tasks:
       docker-compose pull
   - name: Start Dockware
     command: >
-        docker run --rm -p 80:80 dockware/play:latest;
+        docker run --rm -p 8000:80 dockware/play:latest;
